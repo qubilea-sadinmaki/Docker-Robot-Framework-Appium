@@ -3,7 +3,9 @@
 # BUILDING
 # docker build -t rf-appium-server path/to/folder/Dockerfile-folder
 # Or with test source form git (contents downloaded to /test folder)
-# docker build -t rf-appium-server --build-arg TEST_SRC_PATH=https://github.com/repository_id/repository.git path/to/folder/Dockerfile-folder
+# docker build -t rf-appium-server --build-arg TEST_SRC_PATH=https://github.com/qubilea-sadinmaki/Oma-Fortum-Robot-Framework-Appium.git path/to/folder/Dockerfile-folder
+# or
+# docker build -t rf-appium-server --build-arg TEST_SRC_PATH=https://github.com/qubilea-sadinmaki/Oma-Fortum-Robot-Framework-Appium.git https://github.com/qubilea-sadinmaki/Docker-Robot-Framework-Appium.git#:robot-appium-android
 
 # RUNNING CONTAINER
 # # docker run --privileged -d -p 4723:4723 -v /dev/bus/usb:/dev/bus/usb --name container-appium rf-appium-server
